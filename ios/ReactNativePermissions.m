@@ -48,9 +48,9 @@
 // #import "RNPMotion.h"
 
 @interface ReactNativePermissions()
-@property (strong, nonatomic) RNPLocation *locationMgr;
-@property (strong, nonatomic) RNPNotification *notificationMgr;
-@property (strong, nonatomic) RNPBluetooth *bluetoothMgr;
+// @property (strong, nonatomic) RNPLocation *locationMgr;
+// @property (strong, nonatomic) RNPNotification *notificationMgr;
+// @property (strong, nonatomic) RNPBluetooth *bluetoothMgr;
 @end
 
 @implementation ReactNativePermissions
