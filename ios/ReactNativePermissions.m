@@ -6,8 +6,6 @@
 //  Copyright © 2016 Yonah Forst. All rights reserved.
 //
 
-@import Contacts;
-
 #import "ReactNativePermissions.h"
 
 #if __has_include(<React/RCTBridge.h>)
@@ -36,7 +34,6 @@
 
 #import "RNPAudioVideo.h"
 #import "RNPPhoto.h"
-#import "RNPContacts.h"
 
 // #import "RNPLocation.h"
 // #import "RNPBluetooth.h"
@@ -127,9 +124,9 @@ RCT_REMAP_METHOD(getPermissionStatus, getPermissionStatus:(RNPType)type json:(id
         case RNPTypePhoto:
             status = [RNPPhoto getStatus];
             break;
-        case RNPTypeContacts:
-            status = [RNPContacts getStatus];
-            break;
+        // case RNPTypeContacts:
+        //     status = [RNPContacts getStatus];
+        //     break;
         // case RNPTypeEvent:
         //     status = [RNPEvent getStatus:@"event"];
         //     break;
@@ -174,8 +171,8 @@ RCT_REMAP_METHOD(requestPermission, permissionType:(RNPType)type json:(id)json r
             return [RNPAudioVideo request:@"audio" completionHandler:resolve];
         case RNPTypePhoto:
             return [RNPPhoto request:resolve];
-        case RNPTypeContacts:
-            return [RNPContacts request:resolve];
+        // case RNPTypeContacts:
+        //     return [RNPContacts request:resolve];
         // case RNPTypeEvent:
         //     return [RNPEvent request:@"event" completionHandler:resolve];
         // case RNPTypeReminder:
